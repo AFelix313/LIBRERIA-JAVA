@@ -1,0 +1,25 @@
+package BusinessLayer;
+import BusinessLayer.GestioneBiblioteca;
+import java.io.Console;
+
+
+public class Principale {
+
+	
+		public static void main(String[] args) {
+			
+			int comand_utent;
+			
+			GestioneBiblioteca b = new GestioneBiblioteca();
+			b.menuStarter();	
+			b.insertBook();
+		
+		
+		}
+
+	
+		
+		
+		
+
+}

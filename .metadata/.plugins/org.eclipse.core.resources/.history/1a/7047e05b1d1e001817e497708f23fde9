@@ -1,0 +1,31 @@
+
+import java.io.File;
+import java.util.Scanner;
+import user
+
+public class testFileWrite {
+
+	
+	public void writeWord() {
+		
+		
+	User user = new User();
+	Scanner scanner = new Scanner(System.in);
+		
+	
+	System.out.print("Inserisci ID: ");
+	int id = scanner.nextInt();		
+	customer.setId(id);
+	
+	System.out.print("Inserisci nome: ");
+	String name = scanner.next();
+	customer.setName(name);
+	
+	System.out.print("Inserisci età: ");
+	int eta = scanner.nextInt();
+	customer.setAge(eta);
+	
+	}
+	
+	
+}

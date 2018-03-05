@@ -1,0 +1,16 @@
+
+public class Main_Library {
+
+	public static void main(String[] args) {
+	
+		
+		
+		testFileWrite t =  new testFileWrite();
+		
+		User u = t.writeUsers(); // 
+		XML_Library w = new XML_Library();
+		w.XML_Write(u);
+
+	}
+
+}

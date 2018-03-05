@@ -1,0 +1,23 @@
+
+import Entity.*;
+
+public class Main_Library {
+
+	public static void main(String[] args) {
+	
+		
+		
+		testFileWrite t =  new testFileWrite();
+		
+		User u = t.writeUsers(); // Mi creo un oggetto di tipo User così da passare
+		                         // in uscita il file User
+		
+		XML_Library w = new XML_Library();
+		w.XML_Write(u);
+
+		
+		
+		
+	}
+
+}

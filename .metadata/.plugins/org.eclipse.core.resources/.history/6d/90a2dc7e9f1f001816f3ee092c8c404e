@@ -1,0 +1,16 @@
+package BusinessLayer;
+import BusinessLayer.GestioneBiblioteca;
+
+public class Principale {
+
+	
+		public static void main(String[] args) {
+			
+			GestioneBiblioteca b = new GestioneBiblioteca();
+			b.menu();
+			b.insertBook();
+		}
+
+	
+
+}

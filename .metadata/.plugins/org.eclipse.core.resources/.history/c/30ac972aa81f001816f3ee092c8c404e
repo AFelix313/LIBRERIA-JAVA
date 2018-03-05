@@ -1,0 +1,75 @@
+package BusinessLayer;
+
+import java.util.*;
+import Entity.*;
+
+
+public class GestioneBiblioteca {
+
+	
+	// Inizializzo lo scanner e la biblioteca:
+	Scanner input = new Scanner (System.in);
+	Library lazzerini=new Library();
+
+	
+	public int menu_starter() {
+		
+		
+		
+		System.out.println("Welcome to Lazzerini! ");
+		System.out.println("New User: select 1");
+		System.out.println("Login: select 2");
+		System.out.println("Exit: select 3");
+		System.out.print("Choose what do you want to do:");
+		
+		int starter_choice = input.nextInt();
+	
+		return starter_choice;
+	}
+	
+	
+	/*
+	System.out.println("1) Login");
+	System.out.println("2) Insert new book");
+	System.out.println("3) Edit book");
+	System.out.println("4) Delete book");
+	System.out.println("5) Create booking");
+	System.out.println("6) Delete booking");
+	System.out.println("7) Exit");
+	System.out.print("Choose what you wanna do:");
+	*/
+
+	
+	public void insertBook() {
+		
+		
+		Book book = new Book();
+		
+		
+		System.out.println("Inserisci BookId:");
+		book.setBookld(input.nextInt());
+		System.out.println(book.getBookld());
+		if(lazzerini.checkBook(book.getBookld())==false) {
+		
+			System.out.println("Inserisci Title:");
+			book.setTitle(input.next());
+			System.out.println("Inserisci Casa di Pubblicazione:");
+			book.setPublishingHouse(input.next());
+
+			do {
+				System.out.println("Inserisci Autore:");
+				book.setAuthor(input.next());
+				System.out.println("Ci sono altri autori (1 SI 2 NO):");	
+			} while (input.nextInt()!=2);
+
+			lazzerini.addBook(book);
+		}	
+		else 
+		{ 
+			lazzerini.addBook2(book.getBookld());
+		}
+		
+	}
+	
+
+}

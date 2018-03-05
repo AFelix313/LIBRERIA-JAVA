@@ -1,0 +1,29 @@
+package BusinessLayer;
+import BusinessLayer.GestioneBiblioteca;
+import java.io.Console;
+
+
+public class Principale {
+
+	
+		public static void main(String[] args) {
+			
+			int choise;
+			
+			// Creo un ciclo While così da mantenere vera la condizione di funzionamento:
+			
+			//while(choise != 4);
+			
+			GestioneBiblioteca l = new GestioneBiblioteca();
+			l.menuStarter();	
+			l.insertBook();
+		
+		
+		}
+
+	
+		
+		
+		
+
+}

@@ -1,0 +1,34 @@
+package Entity;
+// Rappresenta l'intera Biblioteca ed è caratterizzato da :
+
+import java.io.*; 
+import java.util.ArrayList; 
+import Entity.Book; // Per importare il package 
+
+
+public class Library {
+
+	 private ArrayList <Book> books;
+	 private ArrayList <User> users;
+	 private ArrayList <Reservation> prenotazioni;
+	
+	 public Library()
+	   {
+	      this.books = new ArrayList<Book>();
+	      this.users = new ArrayList<User>();
+	      this.prenotazioni = new ArrayList<Reservation>();
+	   }
+	
+	 
+	// Metodo Aggiungi Libro alla Biblioteca:
+	 
+	public void addBook(Book book) {
+		books.add(book);
+		
+	}
+	 
+	
+	
+	
+	
+}

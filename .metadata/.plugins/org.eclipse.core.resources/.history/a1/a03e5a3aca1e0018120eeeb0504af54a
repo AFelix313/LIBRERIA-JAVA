@@ -1,0 +1,19 @@
+
+import java.util.ArrayList; 
+import Entity.Book; // Per importare il package 
+
+import Entity.*;
+
+// Questa interfaccia permette di gestire i comandi:
+
+public interface Layer_Access_Dati {
+
+	public void Login(String Userld, String Username );
+	public ArrayList <Book> listBook(Book book);
+	public ArrayList <Book> recoverySpecificBook(Book book);  
+	public void insertBook(Book book, User user);
+	public void delateBook(Book book, User user);
+	public void newReservation(User u);
+	public void delateReservatio(User u);
+	
+}

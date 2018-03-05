@@ -1,0 +1,14 @@
+
+import java.util.ArrayList; 
+
+
+public interface Layer_Access_Dati {
+
+	public void Login(String Userld, String Username );
+	public ArrayList <Book> books (Book books);
+	public ArrayList <Book> books ();  
+	public void insertBook(Book book);
+	public void cancelBook(Book book);
+	public void newReservation(User u);
+	
+}
