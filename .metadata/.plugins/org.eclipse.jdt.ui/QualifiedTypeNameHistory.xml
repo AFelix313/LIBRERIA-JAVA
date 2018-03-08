@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="DataLayer.XML_Library"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Entity.Book"/>
+    <fullyQualifiedTypeName name="javax.xml.transform.OutputKeys"/>
 </qualifiedTypeNameHistroy>

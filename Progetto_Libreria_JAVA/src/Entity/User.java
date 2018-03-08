@@ -6,8 +6,8 @@ public class User {
 	private String Username;
 	private int Password;
 	
-	
-	public User(int userld,String role,String username, int password ) {
+	// Username, UserId, Role, Password
+	public User(String username,int userld,String role, int password ) {
 		
 		
 		this.setUserld(userld);

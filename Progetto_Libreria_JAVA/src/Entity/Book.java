@@ -10,15 +10,17 @@ public class Book implements Serializable {
 	private int Bookld;
 	private String Title;
 	//private Book[] copie;
+	private String author;
 	private List<String> authors;
 	private String PublishingHouse;
 	private int quantity;
 	
-	public Book (int bookld, String title,
+	public Book (int bookld, String title, String author,
 			String publishingHouse, int quantity) {
 		
 		this.setBookld(bookld);
 		this.setTitle(title);
+		this.setAuthor(author);
 		this.setPublishingHouse(publishingHouse);
 		this.setQuantity(quantity);
 	}
@@ -55,8 +57,8 @@ public class Book implements Serializable {
 	
 	
 	
-	public List<String> getAuthor() {
-		return authors;
+	public String getAuthor() {
+		return author;
 	}
 
 	public String getAuthor2() {
